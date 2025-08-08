@@ -22,10 +22,15 @@ export const welcome = () => {
       couple: coupleImage,
     } = bride;
     return `
-            <img src="${coupleImage}" alt="couple animation">
-            <figcaption>
+        <img class="flower flower-left" src="./src/assets/images/flower2.webp" alt="couple animation">
+        <img class="flower flower-right" src="./src/assets/images/flower2.webp" alt="couple animation">
+        <img class="avatar" src="${coupleImage}" alt="couple animation">
+          <figcaption>
                 ${brideLName.split(' ')[0]} & ${bridePName.split(' ')[0]}
-            </figcaption>`;
+          </figcaption>
+        <img class="flower flower-bottom-left" src="./src/assets/images/flower3.webp" alt="couple animation">
+        <img class="flower flower-bottom-right" src="./src/assets/images/flower3.webp" alt="couple animation">
+    `;
   };
 
   const generateParameterContent = () => {

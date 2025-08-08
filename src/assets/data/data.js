@@ -14,7 +14,7 @@ export const data = {
       name: 'Aan Nurdianto, S.Pd',
       child: 'Putra dari',
       father: 'Suyanto',
-      mother: 'Ibu Dwi Supriyati',
+      mother: 'Dwi Supriyati',
       address: 'Tambakreja, Cilacap Selatan, Cilacap',
       image: './src/assets/images/cowo.png',
     },
