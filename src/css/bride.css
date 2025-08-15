@@ -121,18 +121,3 @@
     top: 16rem;
     left: 8rem;
 }
-
-.hadist svg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -10;
-}
-
-.hadist svg:nth-of-type(1){
-    top: -8rem;
-}
-
-.hadist svg:nth-of-type(2){
-    bottom: -15rem;
-}
