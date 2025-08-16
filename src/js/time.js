@@ -1,18 +1,23 @@
-import { data } from "../assets/data/data.js";
+import { data } from '../assets/data/data.js';
 
 export const time = () => {
-    const timeContainer = document.querySelector('.time');
-    const [marriageDiv, receptionDiv] = timeContainer.querySelectorAll('div div');
-    const addressParagraph = timeContainer.querySelector('#address');
+  const timeContainer = document.querySelector('.time');
+  const [marriageDiv, receptionDiv, locationDiv] =
+    timeContainer.querySelectorAll('div div');
 
-    const createTimeListItem = (title, details) => (
-        `<h3>${title}</h3>
+  const createTimeListItem = (title, details) =>
+    `<h3>${title}</h3>
          <p>${details.day}, ${details.date} ${details.month} ${details.year} <br> 
-         Pukul ${details.hours.start} WIB sd ${details.hours.finish}</p>`
-    );
+         Pukul ${details.hours.start} WIB sd ${details.hours.finish}</p>`;
 
-    marriageDiv.innerHTML = createTimeListItem('Akad', data.time.marriage);
-    receptionDiv.innerHTML = createTimeListItem('Resepsi', data.time.reception);
+  const createLocation = (title, location) =>
+    `<h3>${title}</h3>
+         <p>${location}</p>`;
 
-    addressParagraph.textContent = data.time.address;
+  marriageDiv.innerHTML = createTimeListItem('Akad Nikah', data.time.marriage);
+  receptionDiv.innerHTML = createTimeListItem(
+    "Walimatul 'Ursyi",
+    data.time.reception
+  );
+  locationDiv.innerHTML = createLocation('Lokasi Pernikahan', data.time.address);
 };
