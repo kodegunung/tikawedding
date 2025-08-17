@@ -85,7 +85,7 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow-md);
-  border: 2px solid #fff;
+  border: 5px solid #b57d;
 }
 
 .welcome figure img.flower-bottom {
