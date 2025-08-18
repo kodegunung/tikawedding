@@ -29,7 +29,7 @@ export const data = {
       date: '6',
       day: 'Sabtu',
       hours: {
-        start: '08.00',
+        start: '08.00 WIB',
         finish: 'Selesai',
       },
     },
@@ -40,7 +40,7 @@ export const data = {
       day: 'Sabtu',
       hours: {
         start: '09.00',
-        finish: 'Selesai',
+        finish: '11.30 WIB',
       },
     },
     address:

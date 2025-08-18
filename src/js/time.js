@@ -8,7 +8,7 @@ export const time = () => {
   const createTimeListItem = (title, details) =>
     `<h3>${title}</h3>
          <p>${details.day}, ${details.date} ${details.month} ${details.year} <br> 
-         Pukul ${details.hours.start} WIB sd ${details.hours.finish}</p>`;
+         Pukul ${details.hours.start} - ${details.hours.finish}</p>`;
 
   const createLocation = (title, location) =>
     `<h3>${title}</h3>
